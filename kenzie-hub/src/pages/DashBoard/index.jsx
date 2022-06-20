@@ -1,25 +1,29 @@
 import logo from "../../assets/Logo.png";
-import Modal from "react-modal";
+
 import { useState } from "react";
 import {BsPlusLg} from 'react-icons/bs'
 import "./index.css";
 import List from "../../components/ListaTecnologias";
+import ModalNewTechnology from "../../components/modalnovaTecnologia";
+import ModalEditTechnology from "../../components/modalEditarTecnologia";
 
-Modal.setAppElement('#root')
+
 
 
 function DashBoard() {
 
 
   const[modalOpen,setModalOpen]=useState(false)
+  const[modalOpenEdit,setModalOpenEdit]=useState(false)
 
-  function abrirModal(){
-    setModalOpen(true)
+  function abrirFecharModal(){
+    setModalOpen(!modalOpen)
   }
 
-   function fecharModal(){
-    setModalOpen(false)
-   }
+  
+  function abrirFecharModalEdit(){
+    setModalOpenEdit(!modalOpenEdit)
+  }
 
   return (
     <div className="dashBoard">
@@ -40,12 +44,13 @@ function DashBoard() {
       <main >
         <div className="addTecnologia">
           <h4 className="tecnologias">Tecnologias</h4>
-          <button className="addBnt"  onClick={abrirModal} ><BsPlusLg/></button>
+          <button className="addBnt"  onClick={abrirFecharModal} ><BsPlusLg/></button>
         </div>
-        
+      <ModalNewTechnology  abrirFecharModal={abrirFecharModal} modalOpen={modalOpen} />
+      <ModalEditTechnology  modalOpenEdit={modalOpenEdit}  abrirFecharModalEdit={abrirFecharModalEdit} />
           <div className="listArea">
          
-         <List/>
+         <List abrirFecharModalEdit={abrirFecharModalEdit} />
             
           </div>
 

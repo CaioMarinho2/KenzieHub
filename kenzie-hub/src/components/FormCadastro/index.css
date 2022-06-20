@@ -65,6 +65,7 @@
 
 #selectModulo {
   width: 265px;
+  cursor: pointer;
 }
 @media (min-width: 420px) {
   .cadastroFormArea {

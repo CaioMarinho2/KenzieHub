@@ -1,9 +1,9 @@
 import "./index.css";
 import{FaRegTrashAlt } from "react-icons/fa"
-function Card() {
+function Card({abrirFecharModalEdit}) {
   return (
     <>
-      <li className="technologyCard">
+      <li className="technologyCard" onClick={abrirFecharModalEdit} >
         
         <p className="technologyName" >React JS</p>
         <div className="technologyInfos">

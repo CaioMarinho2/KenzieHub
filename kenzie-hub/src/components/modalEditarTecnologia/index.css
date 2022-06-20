@@ -1,0 +1,46 @@
+.Modal:focus {
+  outline: none;
+}
+
+.buttonsEdit {
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+}
+.saveBnt {
+  margin-right: 17px;
+
+  width: 163.09px;
+  height: 38.37px;
+  background: #ff577f;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.deleteBnt {
+  width: 78.35px;
+  height: 38.37px;
+  background: #868e96;
+  border: none;
+  font-size: 12.7913px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+@media (min-width: 430px) {
+
+    .buttonsEdit {
+        margin-top: 30.30px;
+    }
+
+    .saveBnt {
+        width: 204px;
+        height: 48px;
+    }
+    .deleteBnt {
+        width: 98px;
+        height: 48px;
+    }
+}

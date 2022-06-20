@@ -1,9 +1,9 @@
 import Card from "../CardTecnologia"
 import "./index.css";
-function List() {
+function List({abrirFecharModalEdit}) {
     return(
         <ul className="techList">
-       <Card/>
+       <Card abrirFecharModalEdit={abrirFecharModalEdit}  />
        <Card/>
        <Card/>
        <Card/>

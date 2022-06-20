@@ -1,0 +1,135 @@
+.Modal {
+  width: 277px;
+  height: 295px;
+  position: absolute;
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.Overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0px;
+  background-color: rgba(18, 18, 20, 0.5);
+}
+
+.closeModal {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: #343b41;
+  height: 41px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.cadastroTechnology {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #f8f9fa;
+  margin-left: 10px;
+}
+
+.closeBnt {
+  background-color: transparent;
+  border: none;
+  color: #868e96;
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+}
+
+.inputNewTechnology {
+  width: 243.66px;
+  height: 38.5px;
+  background: #343b41;
+  border: none;
+  border-radius: 3.20867px;
+  font-size: 14px;
+  color: #f8f9fa;
+  padding-left: 14px;
+}
+
+.inputNewTechnology:focus {
+  outline: none;
+  border: 0.9772px solid #f8f9fa;
+}
+
+.labelTechnology {
+  font-size: 10px;
+  line-height: 0px;
+  color: #f8f9fa;
+  margin-bottom: 18px;
+  margin-top: 22px;
+}
+.inputsTechnology {
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastroTechnologyBnt {
+  width: 250px;
+  height: 38.5px;
+  background: #ff577f;
+  border: none;
+  border-radius: 5px;
+  font-size: 12.8347px;
+  color: #ffffff;
+  margin-top: 23px;
+  cursor: pointer;
+}
+
+.formModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#statusNewTecnology {
+  width: 260px;
+  cursor: pointer;
+}
+
+@media (min-width: 430px) {
+  .Modal {
+    width: 369px;
+    height: 342px;
+  }
+
+  .cadastroTechnology {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .inputNewTechnology {
+    width: 329.93px;
+    height: 48px;
+  }
+  #statusNewTecnology {
+    width: 347px;
+  }
+  .cadastroTechnologyBnt {
+    width: 338px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .labelTechnology{
+    font-size: 13px;
+  }
+  .closeBnt {
+    font-size: 19px;
+  }
+
+  #statusNewTecnology{
+    font-size: 17px;
+  }
+}

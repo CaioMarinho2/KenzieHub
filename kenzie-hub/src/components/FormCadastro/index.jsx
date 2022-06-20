@@ -28,6 +28,7 @@ function FormCadastro() {
               id="nome"
               className="formInput"
             ></input>
+         
           </div>
 
           <div className="formAreas">
