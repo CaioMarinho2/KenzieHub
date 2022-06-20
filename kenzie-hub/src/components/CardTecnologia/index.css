@@ -1,0 +1,66 @@
+.technologyCard {
+  margin-bottom: 16px;
+  background-color: #121214;
+  border-radius: 5px;
+  width: 90vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.technologyName {
+  margin-left: 12.2px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #f8f9fa;
+}
+.technologyLevel {
+  font-weight: 600;
+  font-size: 14px;
+  color: #868e96;
+  margin-top: 10px;
+}
+
+.technologyCard:hover{
+  
+    background-color:#343B41 ;
+    transform: scale(1.04)
+}
+
+.technologyDelete{
+    width: 30px;
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color:rgba(255, 255, 255, 0.8); 
+    transition: 0.3s;
+}
+.technologyDelete:hover{
+    transform: scale(1.5)
+}
+
+.technologyInfos{
+    margin-right: 13px;
+}
+
+
+
+@media (min-width: 640px) {
+
+    .technologyCard {
+        width: 50vw;
+    }
+
+    .technologyName {
+        font-size: 17px;
+    }
+
+    .technologyLevel {
+        font-size: 16px;
+    }
+}

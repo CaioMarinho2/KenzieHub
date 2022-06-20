@@ -1,0 +1,119 @@
+.dashBoard {
+  height: 100vh;
+  width: 100vw;
+}
+
+.logoutBnt {
+  width: 55.49px;
+  height: 32px;
+  background: #212529;
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  color: #f8f9fa;
+  font-family: Inter;
+  cursor: pointer;
+  margin-right: 11px;
+}
+.addBnt {
+  color: #ffffff;
+  background-color: #212529;
+  border: none;
+  width: 32.49px;
+  height: 32px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.topDashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 26px;
+  margin-bottom: 27px;
+}
+
+.logoDashBoard {
+  margin-left: 14px;
+}
+
+.division {
+  height: 1px;
+  border: none;
+  background: #212529;
+  margin: 0;
+}
+
+.infosUser {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  align-items: flex-start;
+}
+.nameUser {
+  font-weight: 700;
+  font-size: 18px;
+  color: #f8f9fa;
+  margin-bottom: 15px;
+}
+.moduloUser {
+  font-weight: 600;
+  font-size: 12px;
+  color: #868e96;
+}
+
+
+.tecnologias {
+  font-weight: 600;
+  font-size: 16px;
+  color: #f8f9fa;
+  margin-left: 15px;
+}
+
+.addTecnologia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+
+.listArea{
+ margin-top: 28px; 
+ display: flex;
+ justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .topDashboard {
+   justify-content: space-around;
+   padding-top: 15px ;
+   padding-bottom: 15px;
+  }
+
+  .infosUser {
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+  }
+  .nameUser{
+    margin: 0;
+    font-size: 21px;
+  }
+  .logoutBnt {
+    width: 65.49px;
+    height: 42px;
+    font-size: 15px;
+  }
+  .moduloUser {
+    font-size: 14px;
+  }
+  
+  .addTecnologia{
+    justify-content: space-around;
+  }
+}

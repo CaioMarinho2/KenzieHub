@@ -1,33 +1,55 @@
 import logo from "../../assets/Logo.png";
+import Modal from "react-modal";
+import { useState } from "react";
+import {BsPlusLg} from 'react-icons/bs'
+import "./index.css";
+import List from "../../components/ListaTecnologias";
+
+Modal.setAppElement('#root')
+
+
 function DashBoard() {
+
+
+  const[modalOpen,setModalOpen]=useState(false)
+
+  function abrirModal(){
+    setModalOpen(true)
+  }
+
+   function fecharModal(){
+    setModalOpen(false)
+   }
+
   return (
     <div className="dashBoard">
-      <div>
-        <img alt="Logo" className="logoCadastro" src={logo} />
-        <button>Sair</button>
-      </div>
+      <nav className="topDashboard">
+        <img alt="Logo" className="logoDashBoard" src={logo} />
+        <button className="logoutBnt">Sair</button>
+      </nav>
 
-      <hr />
+      <hr className="division" />
 
-      <div>
-        <h2>Olá,</h2>
-        <p>modulo X </p>
-      </div>
+      <header className="infosUser">
+        <h2 className="nameUser">Olá, Samuel Leão </h2>
+        <p className="moduloUser">Primeiro módulo  (Introdução ao Frontend)</p>
+      </header>
 
-      <hr />
+      <hr  className="division" />
 
-      <div>
-        <div>
-          <h4>Tecnologias</h4>
-          <button></button>
+      <main >
+        <div className="addTecnologia">
+          <h4 className="tecnologias">Tecnologias</h4>
+          <button className="addBnt"  onClick={abrirModal} ><BsPlusLg/></button>
         </div>
         
-          <div>
-
+          <div className="listArea">
+         
+         <List/>
             
           </div>
 
-      </div>
+      </main>
 
 
     </div>
