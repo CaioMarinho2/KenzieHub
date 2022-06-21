@@ -1,6 +1,5 @@
-.sectionCadastro{
-    height: 600px;
-
+.sectionCadastro {
+  height: 600px;
 }
 
 .cadastroFormArea {
@@ -20,17 +19,17 @@
   margin-top: 42px;
   margin-bottom: 22px;
 }
-.cadastrar{
-    width: 259.9px;
-    height: 38.5px;
-    background: #ff577f;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 13px;
-    color: #ffffff;
-    cursor: pointer;
-    margin-bottom: 20px;
+.cadastrar {
+  width: 259.9px;
+  height: 38.5px;
+  background: #ff577f;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 .topoPag {
   display: flex;
@@ -53,19 +52,25 @@
   color: #f8f9fa;
   border: none;
   cursor: pointer;
-
 }
 
-.infos{
-    font-weight: 600;
-    font-size: 12px;  
-    color: #858d96;
-    margin-bottom: 22px;
+.infos {
+  font-weight: 600;
+  font-size: 12px;
+  color: #858d96;
+  margin-bottom: 22px;
 }
 
 #selectModulo {
   width: 265px;
   cursor: pointer;
+}
+
+.error {
+  font-size: 12px;
+  margin-bottom: 8px;
+  width: 270px;
+  color: #eb052c;
 }
 @media (min-width: 420px) {
   .cadastroFormArea {
@@ -77,20 +82,22 @@
   .cadastro {
     font-size: 21px;
   }
-  .infos{
-    font-size: 14px; 
+  .infos {
+    font-size: 14px;
   }
-  .cadastrar{
+  .cadastrar {
     margin-top: 10px;
     width: 344px;
     height: 48px;
     font-size: 16px;
   }
- 
+  .error {
+    font-size: 14px;
+    width: 350px;
+  }
 }
 @media (min-height: 805px) {
-    .sectionCadastro{
-        height: 100%
-    
-    }
+  .sectionCadastro {
+    height: 100%;
+  }
 }

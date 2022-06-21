@@ -1,5 +1,5 @@
 import "./index.css";
-import{FaRegTrashAlt } from "react-icons/fa"
+
 function Card({abrirFecharModalEdit}) {
   return (
     <>
@@ -7,8 +7,8 @@ function Card({abrirFecharModalEdit}) {
         
         <p className="technologyName" >React JS</p>
         <div className="technologyInfos">
-          <p  className="technologyLevel">inicante</p>
-          <button  className="technologyDelete"> <FaRegTrashAlt/></button>
+          <p  className="technologyLevel">Intermediário</p>
+       
         </div>
      
       </li>

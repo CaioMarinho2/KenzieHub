@@ -23,7 +23,7 @@
   font-weight: 600;
   font-size: 14px;
   color: #868e96;
-  margin-top: 10px;
+ 
 }
 
 .technologyCard:hover{
@@ -32,19 +32,6 @@
     transform: scale(1.04)
 }
 
-.technologyDelete{
-    width: 30px;
-    position: relative;
-    margin-top: 5px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    color:rgba(255, 255, 255, 0.8); 
-    transition: 0.3s;
-}
-.technologyDelete:hover{
-    transform: scale(1.5)
-}
 
 .technologyInfos{
     margin-right: 13px;

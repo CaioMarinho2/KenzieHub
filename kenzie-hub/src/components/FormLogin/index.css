@@ -43,6 +43,7 @@
   line-height: 0px;
   color: #f8f9fa;
   margin-bottom: 18px;
+
 }
 .semConta {
   font-weight: 600;
@@ -83,6 +84,7 @@
   border-radius: 4px;
   color: #f8f9fa;
   padding-left: 15px;
+ 
 }
 .formInput:focus {
   outline: none;

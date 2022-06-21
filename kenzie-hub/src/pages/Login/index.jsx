@@ -1,9 +1,13 @@
 import FormLogin from "../../components/FormLogin";
+import { Redirect} from "react-router-dom";
 
-function Login() {
+function Login({setAutenticated,autenticated}) {
+  if(autenticated){
+    return <Redirect  to="/dashBoard"/>
+  }
   return (
     <div className="login">
-     <FormLogin/>
+     <FormLogin  setAutenticated={setAutenticated}   autenticated={autenticated}/>
     </div>
   );
 }
