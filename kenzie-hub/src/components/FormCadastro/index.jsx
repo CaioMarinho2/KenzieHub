@@ -58,10 +58,7 @@ function FormCadastro() {
       .catch(() => {
         toast.error("Erro ao criar a conta, esse Email já foi cadastrado!");
       });
-    console.log(newUser);
   }
-
-  console.log(errors);
 
   return (
     <section className="sectionCadastro">

@@ -8,7 +8,7 @@ function Routes() {
   const [autenticated, setAutenticated] = useState(false);
 
   useEffect(() => {
-    const token =localStorage.getItem("@KenzieHub:token");
+    const token = localStorage.getItem("@KenzieHub:token");
 
     if (token) {
       return setAutenticated(true);
@@ -26,7 +26,10 @@ function Routes() {
       </Route>
 
       <Route exact path="/dashBoard">
-        <DashBoard autenticated={autenticated}  setAutenticated={setAutenticated} />
+        <DashBoard
+          autenticated={autenticated}
+          setAutenticated={setAutenticated}
+        />
       </Route>
     </Switch>
   );

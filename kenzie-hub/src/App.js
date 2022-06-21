@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 function App() {
-
   return (
     <div className="app">
       <ToastContainer
@@ -19,7 +18,12 @@ function App() {
         draggable
         pauseOnHover
         theme="dark"
-        toastStyle={{ backgroundColor: "#343B41", fontFamily:"Inter", fontWeight:600, fontSize:'12px' }}
+        toastStyle={{
+          backgroundColor: "#343B41",
+          fontFamily: "Inter",
+          fontWeight: 600,
+          fontSize: "12px",
+        }}
       />
       <Routes />
     </div>

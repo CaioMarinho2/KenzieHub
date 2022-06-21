@@ -65,7 +65,6 @@
   color: #868e96;
 }
 
-
 .tecnologias {
   font-weight: 600;
   font-size: 16px;
@@ -73,37 +72,34 @@
   margin-left: 15px;
 }
 
-.addTecnologia{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 26px;
+.addTecnologia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
 }
 
-.listArea{
- margin-top: 28px; 
- display: flex;
- justify-content: center;
+.listArea {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
 }
-
-
-
 
 @media (min-width: 640px) {
   .topDashboard {
-   justify-content: space-around;
-   padding-top: 15px ;
-   padding-bottom: 15px;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .infosUser {
     flex-direction: row;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
-   padding-top: 30px;
-   padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .nameUser{
+  .nameUser {
     margin: 0;
     font-size: 21px;
   }
@@ -115,8 +111,8 @@
   .moduloUser {
     font-size: 14px;
   }
-  
-  .addTecnologia{
+
+  .addTecnologia {
     justify-content: space-around;
   }
 }

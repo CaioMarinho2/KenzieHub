@@ -99,7 +99,7 @@
   cursor: pointer;
 }
 
-.errorModal{
+.errorModal {
   margin-top: 10px;
   font-weight: 700;
   color: #eb052c;
@@ -128,19 +128,18 @@
     font-size: 16px;
   }
 
-  .labelTechnology{
+  .labelTechnology {
     font-size: 13px;
   }
   .closeBnt {
     font-size: 19px;
   }
 
-  #statusNewTecnology{
+  #statusNewTecnology {
     font-size: 17px;
   }
 
-  .errorModal{
+  .errorModal {
     font-size: 17px;
-  
   }
 }

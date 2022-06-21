@@ -9,7 +9,7 @@
 }
 .saveBnt {
   margin-right: 17px;
-cursor: pointer;
+  cursor: pointer;
   width: 163.09px;
   height: 38.37px;
   background: #ff577f;
@@ -29,29 +29,28 @@ cursor: pointer;
   color: #ffffff;
   border-radius: 4px;
 }
-.dadoImutável{
+.dadoImutável {
   font-size: 16px;
   color: #f8f9fa;
   font-family: Inter;
   font-weight: 600;
 }
 
-#nameNewTecnology{
- display: flex;
-align-items: center;
+#nameNewTecnology {
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 430px) {
+  .buttonsEdit {
+    margin-top: 30.3px;
+  }
 
-    .buttonsEdit {
-        margin-top: 30.30px;
-    }
-
-    .saveBnt {
-        width: 204px;
-        height: 48px;
-    }
-    .deleteBnt {
-        width: 98px;
-        height: 48px;
-    }
+  .saveBnt {
+    width: 204px;
+    height: 48px;
+  }
+  .deleteBnt {
+    width: 98px;
+    height: 48px;
+  }
 }

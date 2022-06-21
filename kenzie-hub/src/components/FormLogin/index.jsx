@@ -7,42 +7,48 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import api from "../../services/api";
 import { toast } from "react-toastify";
 
-function FormLogin({setAutenticated,autenticated}) {
+function FormLogin({ setAutenticated, autenticated }) {
   const formSchema = yup.object().shape({
     email: yup.string().required("Email obrigatório").email("Email inválido "),
-    password: yup
-      .string()
-      .required("Senha obrigatória")
-    
+    password: yup.string().required("Senha obrigatória"),
   });
 
   const history = useHistory();
-  const { register, handleSubmit, formState:{errors} } = useForm({
-    resolver: yupResolver(formSchema)
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(formSchema),
   });
 
   function logar(user) {
-    api.post('/sessions',user)
-    .then((response)=>{
-     
-     localStorage.setItem("@KenzieHub:token",response.data.token)
-     localStorage.setItem("@KenzieHub:name",response.data.user.name)
-     localStorage.setItem("@KenzieHub:module",response.data.user.course_module)
-     localStorage.setItem("@KenzieHub:id",response.data.user.id)
-     localStorage.setItem("@KenzieHub:techs",JSON.stringify(response.data.user.techs))
+    api
+      .post("/sessions", user)
+      .then((response) => {
+        localStorage.setItem("@KenzieHub:token", response.data.token);
+        localStorage.setItem("@KenzieHub:name", response.data.user.name);
+        localStorage.setItem(
+          "@KenzieHub:module",
+          response.data.user.course_module
+        );
+        localStorage.setItem("@KenzieHub:id", response.data.user.id);
+        localStorage.setItem(
+          "@KenzieHub:techs",
+          JSON.stringify(response.data.user.techs)
+        );
 
-     setAutenticated(true)
-    
-     history.push('/dashBoard')
+        setAutenticated(true);
 
-    })
-    .catch(()=>{
-     toast.error("Erro ao logar, Email ou Senha incorretas!")
-    })
+        history.push("/dashBoard");
+      })
+      .catch(() => {
+        toast.error("Erro ao logar, Email ou Senha incorretas!");
+      });
   }
-if(autenticated){
-  return <Redirect  to="/dashBoard"/>
-}
+  if (autenticated) {
+    return <Redirect to="/dashBoard" />;
+  }
   return (
     <section className="sectionLogin">
       <img alt="Logo" className="logo" src={logo} />
@@ -73,7 +79,7 @@ if(autenticated){
               className="formInput"
               {...register("password")}
             ></input>
-              <p className="error"> {errors.password?.message}</p>
+            <p className="error"> {errors.password?.message}</p>
           </div>
 
           <button className="Entrar" type="submit">

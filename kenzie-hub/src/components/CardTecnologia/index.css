@@ -11,8 +11,6 @@
   transition: 0.3s;
 }
 
-
-
 .technologyName {
   margin-left: 12.2px;
   font-weight: 700;
@@ -23,33 +21,27 @@
   font-weight: 600;
   font-size: 14px;
   color: #868e96;
- 
 }
 
-.technologyCard:hover{
-  
-    background-color:#343B41 ;
-    transform: scale(1.04)
+.technologyCard:hover {
+  background-color: #343b41;
+  transform: scale(1.04);
 }
 
-
-.technologyInfos{
-    margin-right: 13px;
+.technologyInfos {
+  margin-right: 13px;
 }
-
-
 
 @media (min-width: 640px) {
+  .technologyCard {
+    width: 50vw;
+  }
 
-    .technologyCard {
-        width: 50vw;
-    }
+  .technologyName {
+    font-size: 17px;
+  }
 
-    .technologyName {
-        font-size: 17px;
-    }
-
-    .technologyLevel {
-        font-size: 16px;
-    }
+  .technologyLevel {
+    font-size: 16px;
+  }
 }

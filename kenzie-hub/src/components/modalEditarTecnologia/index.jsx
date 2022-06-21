@@ -4,7 +4,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import api from "../../services/api";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
 
 Modal.setAppElement("#root");
 
@@ -25,7 +24,6 @@ function ModalEditTechnology({
       })
       .then(() => {
         api.get(`/users/${id}`).then((response) => {
-          console.log(response);
           localStorage.setItem(
             "@KenzieHub:techs",
             JSON.stringify(response.data.techs)
@@ -38,9 +36,7 @@ function ModalEditTechnology({
         toast.error("Algo deu errado, tente novamente em alguns instantes");
       });
   }
-  console.log(cardItens.status);
 
- 
   return (
     <Modal
       isOpen={modalOpenEdit}
@@ -67,7 +63,7 @@ function ModalEditTechnology({
             Status
           </label>
           <select
-              defaultValue={cardItens.status}
+            defaultValue={cardItens.status}
             className="inputNewTechnology"
             id="statusNewTecnology"
             {...register("status")}
@@ -91,7 +87,6 @@ function ModalEditTechnology({
                 })
                 .then(() => {
                   api.get(`/users/${id}`).then((response) => {
-                    console.log(response);
                     localStorage.setItem(
                       "@KenzieHub:techs",
                       JSON.stringify(response.data.techs)
