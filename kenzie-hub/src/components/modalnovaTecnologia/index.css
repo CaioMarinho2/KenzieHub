@@ -99,6 +99,12 @@
   cursor: pointer;
 }
 
+.errorModal{
+  margin-top: 10px;
+  font-weight: 700;
+  color: #eb052c;
+}
+
 @media (min-width: 430px) {
   .Modal {
     width: 369px;
@@ -131,5 +137,10 @@
 
   #statusNewTecnology{
     font-size: 17px;
+  }
+
+  .errorModal{
+    font-size: 17px;
+  
   }
 }

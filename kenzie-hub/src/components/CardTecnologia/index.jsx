@@ -1,13 +1,18 @@
 import "./index.css";
 
-function Card({abrirFecharModalEdit}) {
+function Card({abrirFecharModalEdit,title,status,id,setCardItens}) {
   return (
     <>
-      <li className="technologyCard" onClick={abrirFecharModalEdit} >
+      <li className="technologyCard" onClick={()=>{
+        setCardItens({title:title, status:status ,id:id})      
+        abrirFecharModalEdit()
+      
+      
+      }} >
         
-        <p className="technologyName" >React JS</p>
+        <p className="technologyName" >{title}</p>
         <div className="technologyInfos">
-          <p  className="technologyLevel">Intermediário</p>
+          <p  className="technologyLevel">{status}</p>
        
         </div>
      

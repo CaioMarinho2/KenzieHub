@@ -20,24 +20,26 @@ function DashBoard({autenticated,setAutenticated}) {
   const techs =localStorage.getItem("@KenzieHub:techs");
  const arrTechs=JSON.parse(techs)
 
-
+   const[cardItens,setCardItens]=useState({})
   const[modalOpen,setModalOpen]=useState(false)
   const[modalOpenEdit,setModalOpenEdit]=useState(false)
   
   function abrirFecharModal(){
+  
     setModalOpen(!modalOpen)
   }
   
   
   function abrirFecharModalEdit(){
     setModalOpenEdit(!modalOpenEdit)
+
+  
   }
   
   if(!autenticated){
     return <Redirect  to="/"/>
   }
 
-      console.log( arrTechs)
 
   return (
     <div className="dashBoard">
@@ -66,10 +68,10 @@ function DashBoard({autenticated,setAutenticated}) {
           <button className="addBnt"  onClick={abrirFecharModal} ><BsPlusLg/></button>
         </div>
       <ModalNewTechnology  abrirFecharModal={abrirFecharModal} modalOpen={modalOpen} />
-      <ModalEditTechnology  modalOpenEdit={modalOpenEdit}  abrirFecharModalEdit={abrirFecharModalEdit} />
+      <ModalEditTechnology cardItens={cardItens} modalOpenEdit={modalOpenEdit}  abrirFecharModalEdit={abrirFecharModalEdit}   />
           <div className="listArea">
          
-         <List abrirFecharModalEdit={abrirFecharModalEdit} />
+         <List abrirFecharModalEdit={abrirFecharModalEdit} arrTechs={arrTechs} setCardItens={setCardItens}/>
             
           </div>
 

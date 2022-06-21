@@ -28,6 +28,7 @@ function FormLogin({setAutenticated,autenticated}) {
      localStorage.setItem("@KenzieHub:token",response.data.token)
      localStorage.setItem("@KenzieHub:name",response.data.user.name)
      localStorage.setItem("@KenzieHub:module",response.data.user.course_module)
+     localStorage.setItem("@KenzieHub:id",response.data.user.id)
      localStorage.setItem("@KenzieHub:techs",JSON.stringify(response.data.user.techs))
 
      setAutenticated(true)

@@ -9,7 +9,7 @@
 }
 .saveBnt {
   margin-right: 17px;
-
+cursor: pointer;
   width: 163.09px;
   height: 38.37px;
   background: #ff577f;
@@ -20,6 +20,7 @@
 }
 
 .deleteBnt {
+  cursor: pointer;
   width: 78.35px;
   height: 38.37px;
   background: #868e96;
@@ -28,7 +29,17 @@
   color: #ffffff;
   border-radius: 4px;
 }
+.dadoImutável{
+  font-size: 16px;
+  color: #f8f9fa;
+  font-family: Inter;
+  font-weight: 600;
+}
 
+#nameNewTecnology{
+ display: flex;
+align-items: center;
+}
 @media (min-width: 430px) {
 
     .buttonsEdit {
